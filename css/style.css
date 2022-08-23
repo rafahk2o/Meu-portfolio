@@ -133,12 +133,12 @@ body.active {
     margin-left: 3rem;
 }
 
-.menu ul {
+.menu-nav ul {
     display: flex;
     margin-right: 8rem;
 }
 
-.menu ul li {
+.menu-nav ul li {
     margin: 2rem;
     color: #9D00FF;
     font-size: 1.4rem;
@@ -146,10 +146,18 @@ body.active {
 
 }
 
-.menu ul li:hover {
+.bx-menu{
+    display: none;
+}
+
+.menu-nav ul li:hover {
     margin: 2rem;
     color: #ffffff;
     font-size: 1.4rem;
+}
+
+.menu-nav2{
+    display: none;
 }
 
 
@@ -264,11 +272,6 @@ li::before {
     justify-content: space-evenly;
     gap: 1rem;
 
-
-
-
-
-
 }
 
 #mim-sec-left {
@@ -340,7 +343,6 @@ li::before {
     gap: 3rem;
 }
 
-.projects-img {}
 
 .projects-img h5 {
     margin-top: 0.5rem;
@@ -397,14 +399,286 @@ li::before {
     body {
         background: rgb(0, 17, 255);
     }
+
+    #container main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 15%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}   
+
+    #sec-left {
+        margin-top: 3rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4rem;
+        font-weight: 600;
+    
+    }
+
+    #sec-left p{
+        width: 70%;
+        height: 50rem;
+    }
+
+    .sec-right img {
+        width: 90%;
+        border-radius: 50%;
+        box-shadow: 10px 10px 50px rgba(34, 34, 34, 0.267);
+    
+    }
+
+    .menu-nav{
+        display:none;
+    }
+
+     .bx-menu{
+        display: block;
+        margin-right: 3rem;
+        z-index: 99;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+
+    .toggle {
+        display: none;
+        width: 5rem;
+        height: 2rem;
+        background: white;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        border-radius: 5rem;
+        transform: translate(0, -50%);
+        /* border: 1px solid; */
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    
+    }
+    
+    .toggle.active {
+        display: none;
+        width: 5rem;
+        height: 2rem;
+        background: #222;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        border-radius: 5rem;
+        transform: translate(0, -50%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset 1px 4px 4px 4px rgba(95, 95, 95, 0.7);
+    
+    }
+    
+    .circle {
+        display: none;
+        width: 1.3rem;
+        height: 1.3rem;
+        background: white;
+        top: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+        left: 0.4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .circle.active {
+        display: none;
+        width: 1.3rem;
+        height: 1.3rem;
+        background: #222;
+        top: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+        left: 3.3rem;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25),
+            inset 0px 2px 6px #FFFFFF;
+    
+    }
+    
 }
 
 /* Configuração para Tablet */
 @media (min-width: 451px) and (max-width: 1024px) {
     body {
         background: rgb(0, 255, 55);
+   }
+
+   .project {
+    width: 15rem;
+    height: 10rem;
+    background: rgb(226, 226, 226);
+    display: flex;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: #9D00FF;
+
     }
+
+    .projects-img1 {
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+    }
+
+    .menu-nav{
+        display:none;
+    }
+
+     .bx-menu{
+        display: block;
+        margin-right: 3rem;
+        z-index: 99;
+        font-size: 2rem;
+        cursor: pointer;
+
+    }
+
+    .menu-nav ul {
+        display: flex;
+        margin-right: 8rem;
+    }
+    
+    .menu-nav ul li {
+        margin: 2rem;
+        color: #9D00FF;
+        font-size: 1.4rem;
+        position: relative;
+    
+    }
+    
+    .menu-nav ul li:hover {
+        margin: 2rem;
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+
+    .toggle2 {
+         width: 5rem;
+        height: 2rem;
+        background: white;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        border-radius: 5rem;
+        transform: translate(0, -50%);
+        /* border: 1px solid; */
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    
+    }
+    
+    .toggle2.active {
+        width: 5rem;
+        height: 2rem;
+        background: #222;
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        border-radius: 5rem;
+        transform: translate(0, -50%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset 1px 4px 4px 4px rgba(95, 95, 95, 0.7);
+    
+    }
+    
+    .circle2 {
+        width: 1.3rem;
+        height: 1.3rem;
+        background: white;
+        top: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+        left: 0.4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .circle2.active {
+        width: 1.3rem;
+        height: 1.3rem;
+        background: #222;
+        top: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+        left: 3.3rem;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25),
+            inset 0px 2px 6px #FFFFFF;
+    
+    }
+
+    .menu-nav2{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right:-12rem;
+        background-color: #fff;
+        transition: 0.5s;
+    }
+
+    .menu-nav2.active{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right:0rem;
+        background-color: #fff;
+    }
+
+    .menu-nav2 li{
+        padding: 2rem;
+    }
+
+    nav p{
+        display: none;
+    }
+
+    .toggle {
+       display: none;
+    
+    
+    }
+    
+    .toggle.active {
+        display: none;
+    
+    }
+    
+    .circle {
+        display: none;
+    }
+    
+    .circle.active {
+       display: none;
+    
+    }
+
+
 }
+
 
 
 /* Configuração para Notebook */
@@ -412,6 +686,163 @@ li::before {
     body {
         background: rgb(214, 0, 132);
     }
+
+    .project {
+        width: 15rem;
+        height: 10rem;
+        background: rgb(226, 226, 226);
+        display: flex;
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        color: #9D00FF;
+    
+        }
+    
+        .projects-img1 {
+            display: flex;
+            justify-content: center;
+            gap: 10rem;
+        }
+    
+        .menu-nav{
+            display:none;
+        }
+    
+         .bx-menu{
+            display: block;
+            margin-right: 3rem;
+            z-index: 99;
+            font-size: 2rem;
+            cursor: pointer;
+    
+        }
+    
+        .menu-nav ul {
+            display: flex;
+            margin-right: 8rem;
+        }
+        
+        .menu-nav ul li {
+            margin: 2rem;
+            color: #9D00FF;
+            font-size: 1.4rem;
+            position: relative;
+        
+        }
+        
+        .menu-nav ul li:hover {
+            margin: 2rem;
+            color: #ffffff;
+            font-size: 1.4rem;
+        }
+    
+        .toggle2 {
+             width: 5rem;
+            height: 2rem;
+            background: white;
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            border-radius: 5rem;
+            transform: translate(0, -50%);
+            /* border: 1px solid; */
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+        
+        }
+        
+        .toggle2.active {
+            width: 5rem;
+            height: 2rem;
+            background: #222;
+            position: absolute;
+            right: 2rem;
+            top: 50%;
+            border-radius: 5rem;
+            transform: translate(0, -50%);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                inset 1px 4px 4px 4px rgba(95, 95, 95, 0.7);
+        
+        }
+        
+        .circle2 {
+            width: 1.3rem;
+            height: 1.3rem;
+            background: white;
+            top: 50%;
+            position: absolute;
+            transform: translate(0, -50%);
+            left: 0.4rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.5s;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+                inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        .circle2.active {
+            width: 1.3rem;
+            height: 1.3rem;
+            background: #222;
+            top: 50%;
+            position: absolute;
+            transform: translate(0, -50%);
+            left: 3.3rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25),
+                inset 0px 2px 6px #FFFFFF;
+        
+        }
+    
+        .menu-nav2{
+            display: block;
+            position: absolute;
+            top: 2rem;
+            right:-12rem;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+    
+        .menu-nav2.active{
+            /* display: block; */
+            /* position: absolute; */
+            top: 2rem;
+            right:0rem;
+            background-color: #fff;
+            position: fixed;
+        }
+    
+        .menu-nav2 li{
+            padding: 2rem;
+        }
+    
+        nav p{
+            display: none;
+        }
+    
+        .toggle {
+           display: none;
+        
+        
+        }
+        
+        .toggle.active {
+            display: none;
+        
+        }
+        
+        .circle {
+            display: none;
+        }
+        
+        .circle.active {
+           display: none;
+        
+        }
 }
 
 /* Configuração para Desktop */

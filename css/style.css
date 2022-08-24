@@ -546,7 +546,7 @@ li::before {
     width: 70%;
     border-radius: 50%;
     box-shadow: 10px 10px 50px rgba(34, 34, 34, 0.267);
-    margin-bottom: 3rem;
+    margin-top: -15rem;
   }
 
   #projetos {
@@ -599,13 +599,55 @@ li::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+   margin-top: -10rem;
   }
 
   #mim-sec-left img {
     display: flex;
     height: 25rem;
+    margin-top: -20rem;
   }
+
+  #sec-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  #sec-left span:first-child {
+    font-size: 5rem;
+    display: flex;
+    color: #9d00ff;
+    /* text-shadow: 5px 5px 20px#9d00ff59; */
+  }
+  
+  #sec-left span:last-child {
+    font-size: 4rem;
+    display: flex;
+    color: #9d00ff;
+  }
+
+  #mim-sec-right p {
+    max-width: 20rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+  }
+
+  #projetos {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    margin-top: 115rem;
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
 
 /* Configuração para Tablet */

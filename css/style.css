@@ -606,6 +606,7 @@ li::before {
     display: flex;
     height: 25rem;
     margin-top: -20rem;
+    
   }
 
   #sec-left {
@@ -646,6 +647,12 @@ li::before {
     font-size: 3rem;
     display: flex;
     flex-direction: column;
+  }
+
+  #mim-sec-left {
+    display: flex;
+    margin-top: 25rem;
+    
   }
   
 }

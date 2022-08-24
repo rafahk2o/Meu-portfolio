@@ -339,9 +339,9 @@ li::before {
 
 /* Configuração para Smartphone */
 @media (min-width: 50px) and (max-width: 450px) {
-  body {
+  /* body {
     background: rgb(0, 17, 255);
-  }
+  } */
 
   #container main {
     width: 100%;
@@ -437,6 +437,7 @@ li::before {
     /* border: 1px solid; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
       inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-top: 10rem;
   }
 
   .toggle2.active {
@@ -487,6 +488,7 @@ li::before {
     right: 0rem;
     background-color: #fff;
     transition: 0.5s;
+    padding-bottom:2rem;
   }
 
   .menu-nav2.active {

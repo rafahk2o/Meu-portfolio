@@ -604,7 +604,8 @@ li::before {
 
   #mim-sec-left img {
     display: flex;
-    height: 25rem;
+    height: 20rem;
+    width: 20rem;
     margin-top: -20rem;
     
   }

@@ -409,7 +409,7 @@ li::before {
 
   .bx-x{
     display: block;
-    margin-right: 3rem;
+    margin-right: 1rem;
     z-index: 99;
     font-size: 2rem;
     cursor: pointer;

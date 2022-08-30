@@ -503,7 +503,7 @@ li::before {
     transition: 0.5s;
     width: 100vw;
     height: 0vh;
-    background-color: #fff;
+    /* background-color: #fff; */
 
   }
 
@@ -513,14 +513,18 @@ li::before {
     position: absolute;
     width: 100vw;
     height: 100vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.342);
+    transition: 0.5s;
   }
 
-  .menu-nav2.ativo {
+  .menu-nav2.ativo.active {
     display: block;
     background-color: #222;
     position: absolute;
     width: 100vw;
     height: 100vh;
+    box-shadow: 10px 10px 20px #fff;
+    transition: 0.5s ease;
   }
 
   .menu-nav2 ul{

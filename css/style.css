@@ -137,6 +137,10 @@ body.active {
   display: none;
 }
 
+.bx-x{
+  display: none;
+}
+
 .menu-nav ul li:hover {
   margin: 2rem;
   color: #ffffff;

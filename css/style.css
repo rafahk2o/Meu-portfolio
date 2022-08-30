@@ -407,6 +407,15 @@ li::before {
     cursor: pointer;
   }
 
+  .bx-x{
+    display: block;
+    margin-right: 3rem;
+    z-index: 99;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+
   .menu-nav ul {
     display: flex;
     margin-right: 8rem;
@@ -438,6 +447,11 @@ li::before {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
       inset 0px 4px 4px rgba(0, 0, 0, 0.25);
       margin-top: 10rem;
+      display: none;
+  }
+
+  .menu-nav2.active .toggle2{
+    display: block;
   }
 
   .toggle2.active {
@@ -452,6 +466,8 @@ li::before {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
       inset 1px 4px 4px 4px rgba(95, 95, 95, 0.7);
   }
+
+  
 
   .circle2 {
     width: 1.3rem;
@@ -484,23 +500,46 @@ li::before {
   .menu-nav2 {
     display: block;
     position: absolute;
-    top: -20rem;
-    right: 0rem;
-    background-color: #fff;
     transition: 0.5s;
-    padding-bottom:2rem;
+    width: 100vw;
+    height: 0vh;
+    background-color: #fff;
+
   }
 
   .menu-nav2.active {
     display: block;
-    position: absolute;
-    top: 2rem;
-    right: 0rem;
     background-color: #fff;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menu-nav2.ativo {
+    display: block;
+    background-color: #222;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .menu-nav2 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu-nav2 li {
+    display: none;
+    
+  }
+
+
+  .menu-nav2.active li {
     padding: 2rem;
+    margin-top: 3rem;
+    display:block;
+    transition: 1s ease;
   }
 
   nav p {
@@ -656,6 +695,7 @@ li::before {
     
   }
   
+  
 }
 
 /* Configuração para Tablet */
@@ -712,7 +752,11 @@ li::before {
     font-size: 1.4rem;
   }
 
-  .toggle2 {
+  .menu-nav2 .toggle2{
+    display: none;
+  } 
+
+  .menu-nav2.active .toggle2 {
     width: 5rem;
     height: 2rem;
     background: white;
@@ -724,6 +768,7 @@ li::before {
     /* border: 1px solid; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
       inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      display: block;
   }
 
   .toggle2.active {

@@ -6,6 +6,8 @@ let body = document.querySelector("body");
 let header = document.querySelector("header");
 let menuNav = document.querySelector(".menu-nav2");
 let btnMenu = document.querySelector(".bx ");
+let btnX = document.querySelector(".bx-x ");
+let menuNav2 = document.querySelector(".menu-nav2");
 
 circle.addEventListener("click", () => {
   body.classList.toggle("active");
@@ -18,8 +20,18 @@ circle2.addEventListener("click", () => {
   header.classList.toggle("active");
   circle2.classList.toggle("active");
   toggle2.classList.toggle("active");
+menuNav2.classList.toggle("ativo");
+
 });
 
 btnMenu.addEventListener("click", () => {
-menuNav.classList.toggle("active");
+  menuNav.classList.toggle("active");
+  btnX.style.display = "block";
+  btnMenu.style.display = "none";
+});
+
+btnX.addEventListener("click", () => {
+  menuNav.classList.toggle("active");
+  btnX.style.display = "none";
+  btnMenu.style.display = "block";
 });
